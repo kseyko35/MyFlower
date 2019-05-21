@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <color name="TextTabLight">#FFB0BB</color>
+    <color name="TextTabBright">#ffffff</color>
+    <color name="colorBackground">#151B29</color>
+    <color name="LikeButtonGray">#747474</color>
+    <color name="LikeButtonAccent">#F44336</color>
+    <color name="fab_pressed">#546e7a</color>
+    <color name="buttonBorder">#3C3C3C</color>
+    <color name="buttonBackground">#FFFFFF</color>
+</resources>

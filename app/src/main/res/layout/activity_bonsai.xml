@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bonsai">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarBonsai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="16dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbarBonsai"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarBonsai"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="347dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_flipper"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_flipper">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="   Bonsai saksı çiçeği ev, ofis ve işyerlerimizi renklendiren ve bulunduğu ortama sadelik katan ihtişamlı gövde yapısı ile yaşam alanlarınızın vazgeçilmezi haline gelecektir.\n   Boyları 40 cm ile 150 cm arasında değişmektedir. "
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@drawable/ikonbol"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@drawable/ikonruzgar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@drawable/ikonbudama"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@drawable/ikonaydinlik"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="128dp"
+                    android:src="@drawable/ikonvitanmin"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="64dp"
+                    android:src="@drawable/ikontoprak"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ikoncogalma"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Bonsai Çiçeğinin Bakımı"
+                    android:textAlignment="center"
+                    android:textColor="#da3c2f"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="8dp"
+                    android:text="   *Bonsai çiçeği, bol ışık sever. Fakat diğer çiçekler gibi direk güneş ışığından uzak tutulmalıdır.Işık alan bitki ışık aldığı yöne doğru eğilim gösterdiği için haftada bir kez bitkinin yönü ışık almayan taraf ışığın geliş yönüne çevrilmelidir.\n   *Bonsai çiçeği, az ışıkta kaldığı zaman yeteri kadar beslenemez dolayısıyla yaprakların ölmesine ve sararmasına neden verir.\n   *Bonsai saksı çiçeği rüzgar akımı alan yerlerden uzak tutulmalıdır. Rüzgar çiçeğimizi salladığı için bitkinin sapında oynamalar ve toprağın köküne hava akımın girmesine sebep vermektedir.Buda çiçeğimizin ömrünü azalttığı gibi çiçeklerin yapraklarında sararma ve çiçeklerinde solmalara sebep verir.Örneğin : Kapı ağzı ve pencere gibi açılan ve rüzgar alan yerlerden çiçekler kesinlikle uzak tutulmalı.\n   *Bonsai çiçeği, uzun ömürlü ve dayanıklı bir bitkidir. Yaprakları solup gittikten sonra bitkinin tekrar yapraklarını tazelemesi ve yenilemesi için Ana dal hariç çok uzun olan dallar kesilerek şekillendirilmelidir. Budanan dalın hava almaması için üzeri soğuk silikon, mum yada yakıcı olmayan yapıştırıcılar ile kapatılabilir.\n   *Bonsai çiçeğinin yaşam alanlarımızda bulunmasını istiyor ama koyacağımız ortam gün ışığından uzak kalıyor ise bitkilerimizin yapraklarının dökülmesine, çiçeklerinin de açmasına ve sağlıklı kalması için bizlerin bitkilerimize yardımcı olması gerekir. Bunun için çiçeklerimizi doğal ortamlarına uygun hale getirmek ve ışık alması için üstünden aydınlatıcılarla destekleyebiliriz. Saksı çiçeklerinin büyük bir bölümü aydınlığı sever, bu gün ışığı olmalı, olmayan bölgelerde ise, aydınlatıcılar ile desteklenmeli. Karanlıkta kalan bitkiler yapraklarını döker, sararmalar ve solmalar oluşur.Daha az ışık alan bitkilere, daha az su verilmelidir.\n   *Bonsai çiçeğinde, vitamin kullanırken dikkat edilmesi gereken husus, çiçeğimiz yaprakları sağlıklı ise bu dönem içerisinde vitamin kullanmak zorunda değiliz.Çiçeğimizin çiçekleri solmuş ve budamasını yapmış isek bu dönemde bitkimizin hem çiçek açması hemde gelişmesi için mağazalarda satılan çiçek vitaminlerini kullanma koşullarına uyarak bitkimize besin desteği verebiliriz.Örnek: Genelde besinler 1LT suya bir kapak ölçeğinde vitamin dökülür, iyicene karıştırılan suyla vitamin bulunduğu ortamdaki çiçeklere sulamadaki standart ölçeğimizle ilaçlı suyu bitkilerimize onbeş günde bir yada ayda bir uygulayabiliriz.\n   *Bonsai çiçeğinin toprak değişimi Nisan aylarından yapılmalıdır.Toprak değiştirirken dikkat edilmesi gereken husus, değiştirmek istediğiniz çiçeğin saksısının en fazla bir numara büyüğüne dikilmelidir.\n   *Bonsai çoğaltılması bitkinin köklerinden ayırma yöntemiyle olabilir. Bitkinin kökünden çıkarak üst kısımlara uzanan ince kısımlar bitkiye benzeyen yeni bitkiler oluşturur. Bu yeni bitkileri alıp ufak bir saksıya dikilerek yeni bonzaileri oluşturabilirsiniz."
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+            </android.support.constraint.ConstraintLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bonsai Çiçeğinin Sulanması"
+                    android:textAlignment="center"
+                    android:textColor="#da3c2f"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="26dp"
+                    android:text="   *Bonsai çiçeği, yazın haftada iki kere, kışın ise, haftada bir kere saksı üstten sulanmalıdır.\n   *Yazın Sulama tekniğinde Pazartesi ve Perşembe günleri tercih edilebilir.\n   *Kışın ise sulama tekniğinde Pazartesi günleri tercih edilebilir.\n   *Sulama esnasında kullanılan su kabı ölçeği hep aynı olmalı ve çiçeğe dökülen su saksının dibinde en fazla akşam sulamış isek, sabah saksı kabında biriken su dökülmelidir.Böylelikle bitkinin toprağında oluşabilicek koku ve haşerelerin oluşmasında engel olunacaktır.\n   *Sulamada temel kural bitkinin toprağı kurudukça su verilmeli, toprağının kuru yada sulu olduğunu anlamamız için, toprağına parmağımıza batırarak kuru veya ıslak olduğunu anlayabiliriz.Islak ise bitkimiz topraktaki suyu henüz bitirememiş olduğundan sulamamızı bir sonraki sulama gününe bırakmalıyız."
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bonsai Çiçeğine Neler Zarar Verir"
+                android:textAlignment="center"
+                android:textColor="#da3c2f"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   1 - Bitkinin aşırı derecede sulanması\n
+   2 - Bitkimizin saksı deliklerinin kapalı olması ve suyun deliklerden tabağına çıkmaması\n
+   3 - Hastalanmış bitkinin diğer bitkilere yakın olması\n
+   4 - Toprağının kalitesiz olması veya vitaminin yetersiz kalması\n
+   5 - Bitkimizin yapraklarında oluşan hastalıklar ve mantarlar Sinek, solucan veya yapışkan gibi pamuksu hastalıklar bitkimize zarar vermektedir.\n
+   Bu gibi hastalıkları ve haşereleri bitkimizde gördüğümüzde, ziraat ilaçları satan firmalardan bitkimizden bir yaprak veya toprak götürerek oluşan hastalıkları göre ona uygun ilaçları alıp kullanma klavuzuna uyarak kullanınız."
+                android:textSize="15sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

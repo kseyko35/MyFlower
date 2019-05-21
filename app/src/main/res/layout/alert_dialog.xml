@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/inputLayout"
+        android:layout_below="@+id/inputLayout"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Choose your flower type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/inputLayout"
+        android:layout_below="@+id/editText3"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="Flower Type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <TextView
+        android:id="@+id/editText4"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/inputLayout"
+        android:layout_below="@+id/spinner"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="What would you like to remember?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+
+        android:layout_alignStart="@+id/inputLayout"
+        android:layout_below="@+id/editText4"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText4">
+
+        <RadioButton
+            android:id="@+id/suRButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Water the Flower" />
+
+        <RadioButton
+            android:id="@+id/toprakRButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner"
+            android:layout_weight="1"
+            android:text="Soil Change" />
+
+        <RadioButton
+            android:id="@+id/gubreRButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Vitamin Use" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/AddAlarm"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/inputLayout"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_button"
+        android:backgroundTint="#da3c2f"
+        android:onClick="AddAlarm"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:shadowColor="@color/TextTabBright"
+        android:text="Add Remainder"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+</android.support.constraint.ConstraintLayout>

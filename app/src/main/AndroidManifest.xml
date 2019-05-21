@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.denes.myflower">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/flowerpot"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/flowerpot"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".AddReminderActivity"
+            android:parentActivityName=".AlarmMainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AlarmMainActivity" />
+        </activity>
+
+        <provider
+            android:name=".data.AlarmReminderProvider"
+            android:authorities="com.denes.myflower"
+            android:exported="false" />
+
+        <service
+            android:name=".reminder.ReminderAlarmService"
+            android:exported="false" />
+        <service
+            android:name=".MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/circleiconflower" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AlarmMainActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".Antoryum" />
+        <activity android:name=".SetupActivity" />
+        <activity android:name=".AddFlower" />
+        <activity android:name=".Comments" />
+        <activity android:name=".About" />
+        <activity android:name=".Vanilya" />
+        <activity android:name=".Portuca" />
+        <activity android:name=".Orkides" />
+        <activity android:name=".Bonsai"></activity>
+    </application>
+
+</manifest>

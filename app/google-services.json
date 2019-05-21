@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "997283346627",
+    "firebase_url": "https://myflower-ef899-686d1.firebaseio.com",
+    "project_id": "myflower-ef899",
+    "storage_bucket": "myflower-ef899.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997283346627:android:a660b04c9f8ff2c9",
+        "android_client_info": {
+          "package_name": "com.denes.myflower"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997283346627-5hp767q4lltojf74tojjiilhqcru3939.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.denes.myflower",
+            "certificate_hash": "186b44e072b5f21a96a44de22a3dc06ee662a15c"
+          }
+        },
+        {
+          "client_id": "997283346627-ihgg2uia1nl0l9jd34psk9ard5bvkqrm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKdM1H3d6oCCK16_sQa4qFXh2xvvENZGI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997283346627-ihgg2uia1nl0l9jd34psk9ard5bvkqrm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

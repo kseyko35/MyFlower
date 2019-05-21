@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Antoryum">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarAntoryum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="16dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbarAntoryum"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarAntoryum"
+         />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="347dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_flipper"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_flipper">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="    *Antoryum bilinen diğer adı ile flamingo çiçeği yetiştirilmesi oldukça kolay, uzun ömürlü ve güzel bir görüntüye sahip olan orta boylu bir bitkidir. Yapraklarının adeta cilalanmışçasına parlak olan görüntüsü dekoratifliğini arttırmaktadır. Bu parlaklığın antoryumu estetik olarak daha da cazip hale getirdiği söylenebilir. Genellikle kırmızı rengi rağbet görmesine karşın, birçok değişik renk seçeneğine sahip bir bitkidir. Tercih edilen renkleri arasında, pembe, beyaz ve yeşil tonları da mevcuttur.\n   *Antoryum sanılanın aksine bakımı çok zorlu veya nazlı bir bitki değildir. Gerekli sıcaklık koşulları sağlandığı taktirde tüm yıl boyunca çiçek açabilir. Evlerinizi, ofislerinizi süs bitkileri ile canlandırmayı seviyorsanız sizin için çok iyi bir alternatif olacak niteliktedir.\n   *Antoryumun anavatanı Orta ve Güney Amerika’nın yağmur ormanlarıdır. Buradan da anlaşılacağı üzere antoryum aslen tropikal bir bitkidir. Ancak ev koşullarında yetiştirilmeye ve büyütülmeye uygun niteliktedir."
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Antoryum Çiçeğinin Özellikleri"
+                android:textAlignment="center"
+                android:textColor="#da3c2f"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="   *Antoryum saksı çiçeği, ev, ofis, işyerleri gibi yaşam alanlarımızı renklendiren bitkilerdir.\n   *Çeşit olarak pembe, beyaz ve kırmızı renk çeşitleri vardır.\n   *Boyları 40 cm ile 80 cm arasında değişmektedir.\n   *Kalp şeklini andıran çiçekleriyle ev, ofis, işyerleri gibi yaşam alanlarında çalışma odaları gibi yerleri süsler ve mutluluk hissi katar.\n   *Bakımları kolay olduğundan çokça tercih edilir.\n   *Antoryum sanılanın aksine bakımı çok zorlu veya nazlı bir bitki değildir.\n   *Gerekli sıcaklık koşulları sağlandığı taktirde tüm yıl boyunca çiçek açabilir.\n   *Evlerinizi, ofislerinizi süs bitkileri ile canlandırmayı seviyorsanız sizin için çok iyi bir alternatif olacak niteliktedir."
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Antoryum Çiçeğinin Çeşitleri"
+                android:textAlignment="center"
+                android:textColor="#da3c2f"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   *Antoryum yani flamingo çiçeğinin 800’e yakın çeşidi olduğu bilinmektedir. Türler yaprak şekillerindeki bir takım farklılıklar ve kök yapılarına göre sınıflandırılmaktadır. Ancak ülkemizde en çok bilinen ve yaygın olarak yetiştirilen türü Anthurium Andraeanum’dur.\n   *Hollanda ve Almanya gibi ülkelerde antoryumun hibrit türleri ekonomik amaçlı olarak üretilmektedir. Bu türlerin dayanıklılığının daha fazla olduğu bilinmekle beraber, tropikal türlerin gerekli birkaç basit şart sağlandığında ev ve iş yerlerinde yetiştirilmesi ve neredeyse tüm yıl boyunca bitkinin çiçek vermesinin sağlanması mümkündür."
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@drawable/ikonbol"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@drawable/ikonruzgar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@drawable/ikonbudama"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:src="@drawable/ikonaydinlik"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="64dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="64dp"
+                    android:src="@drawable/ikonvitanmin"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="64dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="64dp"
+                    android:src="@drawable/ikontoprak"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Antoryum Çiçeğinin Bakımı"
+                    android:textAlignment="center"
+                    android:textColor="#da3c2f"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="8dp"
+                    android:text="   *Antoryum çiçeği direk olarak gün ışığına maruz kalmamalıdır. Gün ışığı aldığı yöne doğru eğilim gösterebilir. Gün ışığı almayan yönü belirli aralıklarla gün ışığına çevirilmelidir. Böylece çiçeğin bir yöne doğru eğilimi engellenebilir.\n   *Bitkilerimiz az ışık aldığı zaman yeteri kadar beslenemeyeceği için, çiçeklerinde solma ve kararma meydana gelir.\n   *Antoryum çiçeği rüzgar akımı alan yerlerden uzak tutulmalıdır. Rüzgar saksı çiçeğimizi salladığı için bitkinin sapında oynamalar ve toprağın köküne hava akımın girmesine sebep vermektedir. Buda çiçeğimizin ömrünü azalttığı gibi çiçeklerin yapraklarında sararma ve çiçeklerinde solmalara sebep verir. Örneğin : Kapı ağzı ve pencere gibi açılan ve rüzgar alan yerlerden çiçekler kesinlikle uzak tutulmalıdır.\n   *Antoryum çiçeği uzun süre kalan bir bitkidir. Dalların üzerindeki çiçekler solup ve geçtikten sonra bitkimizin bir daha çiçek açması için solan yaprak ve  çiçeklerin kesilerek budanmalı ve kesilen bölgenin içine hava akımının girmesine engel olmak için, üzeri kapatılmalıdır. Örnek:  soğuk silikon, mum yada yakıcı olmayan yapışkanlarla  kapatılabilinir.\n   *Saksı çiçeklerimiz yaşam alanlarımızda bulunmasını istiyor ama koyacağımız ortam gün ışığından uzak kalıyor ise bitkilerimizin yapraklarının dökülmesine, çiçeklerinin de açmasına ve sağlıklı kalması için bizlerin bitkilerimize yardımcı olmamız gerekir. Bunun için çiçeklerimizi doğal ortamlarına uygun hale getirmek ve ışık alması için üstünden aydınlatıcılarla destekleyebiliriz. Saksı çiçeklerinin büyük bir bölümü aydınlığı sever, bu gün ışığı olmalı, olmayan bölgelerde ise, aydınlatıcılar ile desteklenmeli.Karanlıkta kalan bitkiler yapraklarını döker, sararmalar ve solmalar oluşur. Daha az ışık alan bitkilere, daha az su verilmelidir.\n   *Antoryum çiçeğimize, vitamin kullanırken dikkat edilmesi gereken husus, çiçeğimiz yaprakları ve çiçekleri sağlıklı ise bu dönem içerisinde vitamin kullanmak zorunda değiliğiz. Çiçeğimizin çiçekleri solmuş ve budamasını yapmış isek bu dönemde bitkimizin hem çiçek açması hemde gelişmesi çin mağazarda satılan çiçek vitaminlerini kullanma koşullarına uyarak bitkimize besin desteği verebiliriz. Örnek: Genelde besinler 1LT suya bir kapak ölçeğinde vitamin dökülür, iyice karıştırılan suyla vitamin bulunduğu ortamdaki çiçeklere sulamadaki standart ölçeğimizle ilaçlı suyu bitkilerimize onbeş günde bir yada ayda bir uygulayabiliriz.\n   *Antoryum çiçeğinin toprak değişimi Nisan-Mayıs aylarından yapılmalıdır. Toprak değiştirirken dikkat edilmesi gereken husus, değiştirmek istediğiniz çiçeğin saksısının en fazla bir numara büyüğüne dikilmelidir."
+                    android:textSize="15sp"
+                    android:textStyle="italic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+            </android.support.constraint.ConstraintLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Antoryum Çiçeğinin Sulanması"
+                    android:textAlignment="center"
+                    android:textColor="#da3c2f"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="26dp"
+                    android:text="   Sulamaya gelinecek olursa, bitkinin yaz aylarında haftada 3 kez diğer zamanlarda ise iki ve üç günlük aralıklarla iki kez sulanması yeterli olacaktır.\n   *Tabağında çok uzun süre su bekletilmemesi gereklidir.\n   *Antoryumun yeniliğini ve tazeliğini koruyabilmesi adına kurumuş ve sağlıksız çiçeklerinin mutlaka budanması gereklidir. Kesilen bölgeden çiçeğe hava akımının girmemesi adına taze kesikler mutlaka belli bir süre kapatılmalıdır."
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Antoryuma Neler Zarar Verir"
+                android:textAlignment="center"
+                android:textColor="#da3c2f"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   1 - Bitkinin aşırı derecede sulanması\n
+   2 - Bitkimizin saksı deliklerinin kapalı olması ve suyun deliklerden tabağına çıkmaması\n
+   3 - Hastalanmış bitkinin diğer bitkilere yakın olması\n
+   4 - Toprağının kalitesiz olması veya vitaminin yetersiz kalması\n
+   5 - Bitkimizin yapraklarında oluşan hastalıklar ve mantarlar Sinek, solucan veya yapışkan gibi pamuksu hastalıklar bitkimize zarar vermektedir.\n
+   Bu gibi hastalıkları ve haşereleri bitkimizde gördüğümüzde, ziraat ilaçları satan firmalardan bitkimizden bir yaprak veya toprak götürerek oluşan hastalıkları göre ona uygun ilaçları alıp kullanma klavuzuna uyarak kullanınız."
+                android:textSize="15sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

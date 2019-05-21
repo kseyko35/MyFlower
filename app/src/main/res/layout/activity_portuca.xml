@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Portuca">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarPortuca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="16dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbarPortuca"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarPortuca"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="347dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_flipper"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_flipper">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="left"
+                android:text="   *Halk arasında semizebe ismi ile bilinen semizotu, hemen her yerde rahatlıkla görebileceğiniz bitkilerden biridir. Nisan, Mayıs ayı yağmurlarından sonra hızla verimini artıran bitki, ekşimsi tadı ile pek çok yemek ve salatada yerini almaktadır. En fazla 30 cm kadar uzayan semizotu, bir yıllık otsu bitkidir.\n   *Toprağın üzerine tüm dallarıyla yayılan semizotu bitkisi, etli yapraklara kalın damarlı dallara ve görünen tohumlara sahiptir. Tercih edilen yerleri genellikle çok büyümemiş olan yapraklarıyla kalınlaşmamış sap kısımlarıdır. Baş kısmında bulunan siyah tohumları ile semizotunu rahatlıkla ekebilirsiniz.\n   *Tadı bir nevi kuzukulağı bitkisine benzeyen semizotu daha küçük yapraklardan oluşmaktadır. Kullanım alanları bir hayli geniş olan bitki, lezzetli ve şifalı bitkiler arasında kabul edilmektedir. Üstelik temin etmek için bahçede bir tur atmak yeterli olacaktır. Hiçbir toprağı ayırt etmeden rahatlıkla büyüyebilen bir bitkidir. Semizotunun içinde bulunan omega 3 ve yağlar, balıkla yarışacak kadar zengindir."
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Semizotu Nedir?"
+                android:textAlignment="center"
+                android:textColor="#da3c2f"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   *Bilim dünyasında Portulacca oleraceae, Purslane ya da Pourpier olarak bilinen semizotu, bölge bölge değişen isimlere sahiptir. Çimlendikten hemen sonra sarı, mor, pembe renkli çiçekler açan bitki daha sonra yenilebilecek kıvama gelecektir.\n   *Özellikle diyet zamanında kullanılması gereken semizotunun tok tutma özelliği vardır. İçinde bulunan ekşimsi tat, kişinin metabolizmasını hızlandırıp daha rahat harekete geçmesini sağlamaktadır. Et ve balığın yanında eşsiz bir lezzet katan semizotu aynı zamanda yalnız başına da güzel bir öğün olmaktadır."
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Semizotu Nerede Yetişmektedir?"
+                android:textAlignment="center"
+                android:textColor="#da3c2f"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   *Anavatanı Orta Doğu olan semizotunun Hindistan’da çok fazla üretildiği bilinmektedir. Nemli ve ılık havaları tercih eden bitki bu özelliği ile Türkiye’de en çok Ege, Akdeniz civarında yetişmektedir. Özel bir yetiştirme stratejisi gerektirmeyen bitki, tüketim için düzenli olarak yetiştirilmek istenirse bu durumda bakımı yapılmalı bol bol toplanmalıdır. Yenilecek büyüklüğe ulaştığında hemen toplanan semizotu daha çok üreyecektir.\n   *Çok seçici olmayan semizotu, toprağı nemli olan her yerde büyüyebilmektedir. Kumlu ve killi olan topraklar verimin daha kolay alınmasını sağlamaktadır. Bunun yanında hava sıcaklığının 15 derece civarında olduğu yerlerde yetiştirmek daha sağlıklı olacaktır.\n   *Geniş bahçelerde büyütülen semizotu aynı zamanda saksılarda da yetişebilmektedir. Haftalık su ihtiyacı karşılandığında semizotunun kısa sürede pek çok dala ayrıldığını görebilirsiniz. Kullandığınız toprak kaliteli ve organik olursa semizotu da bir o kadar besleyici olacaktır."
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Semizotunun Faydaları Nelerdir?"
+                android:textAlignment="center"
+                android:textColor="#da3c2f"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   *Semizotu demir eksikliği sıkıntısı olanlar için oldukça besleyicidir. Demir içeriği ile kırmızı ve beyaz kan hücrelerinin çoğalmasını sağlar. Bunun dışında kan şekerini düzenler ve tansiyon üzerinde oldukça etkilidir. Vücuda enerji veren semizotu aynı zamanda kişinin metabolizma hızını ikiye katlar. Dolayısıyla kilo verme hızınızı arttırır.\n   *Gut hastalığı, gastrit, felç riskini düşüren semizotu aynı zamanda kanser türlerinden korunmanızı sağlar. Bağışıklığı güçlendiren bitki ile gribal enfeksiyonlara yakalanmanız oldukça zordur. Ayrıca idrar yapamama sorunu olanlara da iyi gelmektedir. Çocuklarda beyin gelişimini destekleyen semizotu ayrıca kabızlığın da önüne geçmektedir. Böbreklerde kumlanmayı önler, taş dökmeye yardımcı olur. Hemoroide karşı etkilidir. Kasları güçlendirir.\n   *Balık kadar omega 3 içeriğine sahiptir. Bu nedenle balık sevmeyenler omega 3 ihtiyacını semizotundan karşılayabilirler. Balık yağının içinde bulunan asitler ve yağlar semizotunun içinde de bulunmaktadır. Bu nedenle düzenli olarak semizotu yediğinizde balık açığını kapatabilmeniz mümkündür."
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Semizotunun Yan Etkileri Nelerdir?"
+                android:textAlignment="center"
+                android:textColor="#da3c2f"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   *Yüksek miktarda kullanılan semizotu mide düzenini alt üst etmektedir. Ekşimsi bir tadının olması, midede yanmaya neden olmaktadır. Bununla beraber fazla tüketilen semizotu, kişinin ishal olmasına da sebebiyet vermektedir. Alerjik reaksiyonlar ortaya koyan bitki, ciltte kızarıklıklara ve kaşıntıya neden olabilmektedir. Bu nedenle tek seferde çok tüketmeden önce muhakkak az alıp test etmekte yarar vardır."
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

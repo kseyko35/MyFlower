@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.denes.myflower.Vanilya">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarPortuca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="16dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbarPortuca"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarPortuca"
+         />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="347dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_flipper"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_flipper">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="   İsmi Latince kökenli Vanilla planifolia’dan gelen vanilya, genellikle tropikal ülkelerin bir ürünü olup hoş kokusu ve faydaları ile sıkça adından söz ettirmektedir.\n\n   İştah açıcı özellikte olmasının yanında, ayrıca kullanan kişilerde afrodizyak etkisi yaratması, vanilyanın yetiştiği bölgelerde oldukça kıymetli bir bitki olmasına neden olmuştur.\n\n   Birden çok kullanım şekli ve güzel kokusu nedeniyle vanilya bitkisi birçok yerde karşımıza çıkmaktadır.\n\n   Madagaskar ve Meksika gibi ülkeler vanilya bitkisinin anavatanıdır.\n\n   Tatlıları süslemek ve kozmetik alanda farklı şekillerde vanilyadan yararlanmak için öncelikle vanilyanın henüz yeşil halinde iken toplanması ve haşlandıktan sonra kurutulması gerekmektedir. İşte kurutulmuş olan vanilya meyveleri birçok alanda kullanılan vanilyanın hammaddesi gibidir.\n\n   Ticari amaçla üretilip kullanılması en çok Meksika ülkesinde gerçekleşmekte ve bunun için vanilya orkidesi yetiştirilmektedir.\n\n   Bağışıklık sisteminin güçlendirmesinden, insana canlılık ve enerji vermesi gibi pek çok faydayı vanilyanın kullanılması ile elde etmek mümkündür. "
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vanilya Nedir?"
+                android:textAlignment="center"
+                android:textColor="#da3c2f"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Salepgiller (Orchidaceae) ailesinden şifa kaynağı özelliğinde bir bitki olan vanilya, yaklaşık 20 santimetre boylarındaki meyveleri olan bir bitkidir.\n\n    Yaprakları sapsız ve yassıdır. \n\n   Yaklaşık 150 türü olan vanilya, Ekvatorun Pasifik kıyıları, Meksika, Madagaskar, Cava, Antiller ve daha birçok yerde yetişebilmektedir.\n\n   Vanilya tozu ya da özü olarak birçok yerde karşılaşılan vanilyayı elde etmek için olgunlaşmamış vanilya meyvelerine ihtiyaç duyulmaktadır.\n\n   İçeriğinde bulunan kalsiyum ve sodyum gibi faydalı bileşenler vanilyanın oldukça faydalı bir bitki olmasını sağlamaktadır.\n\n   Bir miktar şeker içeren vanilya kolesterol içermeyen bir bitkidir."
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vanilyanın Faydaları Nelerdir?"
+                android:textAlignment="center"
+                android:textColor="#da3c2f"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   *Tüm vücudun sinir sistemini olumlu yönde uyarıcı etkisinin olduğunu söylemek mümkündür. Bu sayede çeşitli psikolojik sorun ve depresyona karşı bünyelerin daha dayanıklı olmasını sağlamaktadır.\n   *Stres ile baş edebilmek için vanilyanın sadece koklanması bile yeterlidir.\n   *Sindirimi kolaylaştırması ve mide hastalıklarını iyileştirici gibi etkileri vanilyanın diğer yararları arasındadır.\n   *Adet söktürücü özelliğinin yanı sıra, adet düzensizliği yaşayan kadınların düzenli olarak vanilya kullanmaları durumunda, bu durumdan kurtuldukları gözlenmiştir.\n   Öksürük, astım ve soğuk algınlığı hastalıklarına karşı önlem almak ve iyileşme sağlamak içinde vanilya bitkisinden yarar sağlanabilir.\n   *Hazmı kolaylaştırır.\n   *Ateşi düşürür\n   *Afrodizyak yani cinsel gücü artırıcı etkisi vardır.\n   *Vücuda enerji ve direnç verir."
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vanilyanın Yan Etkileri Nelerdir?"
+                android:textAlignment="center"
+                android:textColor="#da3c2f"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   *Genellikle faydaları ile bilinen vanilya, kullanımı sırasında olası yan etkilerine karşı her bitkide olduğu gibi dikkatli kullanılması önerilen bir bitkidir.\n   *Afrodizyak etkisinin yüksek olmasından dolayı fazla kullanmamaya özen gösterilmelidir.\n   *Vanilya mide bulantılarını önlemek amacıyla önerilen bir bitki olmasına rağmen aşırı tüketilmesi durumunda ters etkiye neden olarak kusma problemine yol açabilir.\n   *Birçok bitkinin olduğu gibi vanilyanın da yağı piyasa da satılmaktadır.Harici olarak cilde uygulandığında sakinlik vermesinden dolayı vanilyanın faydalarından mahrum kalmamak için yağı rahatlıkla kullanılabilir.\n   *Zararı olmayan özellikle yararları ile bilinen vanilya, bazı hassas bünyelerde oluşturabileceği alerji ve yan etkilere karşı dikkatle kullanılması gereken bir bitkidir.\n   *Vanilya tozu, özü ve yağı gibi farklı şekillerde alınan vanilyanın aşırı tüketiminden özenle kaçınılmalıdır. Aksi halde faydalı bir bitkiyi oldukça zararlı bir hale dönüştürmek kaçınılmaz olabilir."
+                android:textSize="15sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
