@@ -19,7 +19,7 @@ public class About extends AppCompatActivity {
     private static final int SWIPE_MIN_DISTANCE = 120;
     private static final int SWIPE_THRESHOLD_VELOCITY = 200;
     private ViewFlipper mViewFlipper, mViewFlipperMer;
-    private Context mContext,mContextt;
+    private Context mContext;
     private Toolbar mToolbar;
     private final GestureDetector detector = new GestureDetector(new SwipeGestureDetector());
     private final GestureDetector detectorMer = new GestureDetector(new SwipeGestureDetectorr());
@@ -48,8 +48,8 @@ public class About extends AppCompatActivity {
             }
         });
 
-        mContextt = this;
-        mViewFlipperMer =  this.findViewById(R.id.view_flipper_mer);
+
+        mViewFlipperMer =  this.findViewById(R.id.view_flipper2);
         mViewFlipperMer.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(final View vieww, final MotionEvent eventt) {
@@ -66,11 +66,11 @@ public class About extends AppCompatActivity {
         webBtn = findViewById(R.id.web);
         mailBtn = findViewById(R.id.mail);
 
-        instBtnMer = findViewById(R.id.instmer);
-        fbBtnMer = findViewById(R.id.facemer);
-        twittBtnMer = findViewById(R.id.twittermer);
-        webBtnMer =findViewById(R.id.webmer);
-        mailBtnMer = findViewById(R.id.mailmer);
+        instBtnMer = findViewById(R.id.inst2);
+        fbBtnMer = findViewById(R.id.face2);
+        twittBtnMer = findViewById(R.id.link2);
+        webBtnMer =findViewById(R.id.web2);
+        mailBtnMer = findViewById(R.id.mail2);
 
         setSupportActionBar(mToolbar);
         getSupportActionBar().setTitle("About Us");

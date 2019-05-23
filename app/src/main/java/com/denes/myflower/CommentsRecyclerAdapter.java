@@ -64,14 +64,10 @@ public class CommentsRecyclerAdapter extends RecyclerView.Adapter<CommentsRecycl
 
         String user_id=commentsList.get(position).getUser_id();
 
-        try{
-            long millisecond = commentsList.get(position).getTimestamp().getTime();
-            String dateString = DateFormat.format("dd/MM/yyyy", new Date(millisecond)).toString();
-            holder.setTime(dateString);
-        }
-        catch (Exception e){
+            String millisecond = commentsList.get(position).getTimestamp();
 
-        }
+            holder.setTime(millisecond);
+
         mFirebaseFirestore.collection("users").document(user_id).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {

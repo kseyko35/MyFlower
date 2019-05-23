@@ -5,21 +5,10 @@ import java.util.Date;
 public class CommentsActivity extends FlowerPostId {
 
     private String message,user_id;
-    private Date timestamp;
-
-
+    private String timestamp;
 
     public String getMessage() {
         return message;
-    }
-    public CommentsActivity(){
-
-    }
-
-    public CommentsActivity(String message, String user_id, Date timestamp) {
-        this.message = message;
-        this.user_id = user_id;
-        this.timestamp = timestamp;
     }
 
     public void setMessage(String message) {
@@ -34,13 +23,19 @@ public class CommentsActivity extends FlowerPostId {
         this.user_id = user_id;
     }
 
-    public Date getTimestamp() {
+    public String getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(Date timestamp) {
+    public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
     }
+
+
+
+
+
+
 
 
 }

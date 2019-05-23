@@ -10,43 +10,33 @@
         android:id="@+id/toolbarAbout"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:minHeight="?attr/actionBarSize"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:contentInsetLeft="0dp"
-        app:contentInsetStart="16dp"
-        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:background="?attr/colorPrimary" />
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@color/mdtp_white"/>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/toolbarAbout"
         android:orientation="vertical"
         android:padding="15dp">
 
         <TextView
-            android:id="@+id/textView39"
+            android:id="@+id/aboutMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:gravity="center"
             android:padding="20dp"
-            android:text="Çiçek bakımı için hazırladığımız bu programda bütün bilgiler Anadolu Üniversitesi kütüphanesinden alınmıştır "
+            android:text="@string/main_about"
             android:textColor="@color/colorBackground"
             android:textSize="18sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="51dp" />
+            android:textStyle="bold" />
 
         <ViewFlipper
             android:id="@+id/view_flipper"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_below="@+id/player">
+            >
 
             <RelativeLayout
                 android:layout_width="fill_parent"
@@ -57,9 +47,6 @@
                     android:id="@+id/imageView"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
                     android:scaleType="centerCrop"
                     android:src="@drawable/seyfettinprofile" />
 
@@ -67,37 +54,27 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_margin="5dp"
+                    android:layout_marginStart="10dp"
                     android:layout_toEndOf="@+id/imageView"
-                    android:layout_toRightOf="@+id/imageView"
-                    android:text="Uygulama Seyfettin ERCAN tarafından yazılmıştır. Bir tez çalışması olmakla beraber bitki haricinde hayvan ya da hatırlamayı unuttuğumuz birçok şey için kullanılabilir. İletişim bilgileri için kaydırınız"
+                    android:text="@string/about_seyfi"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="13sp" />
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/aydinser"
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@+id/textView39"
+                android:layout_below="@+id/aboutMain"
                 android:background="@drawable/multichoice_bg_unchecked">
 
-                <TextView
-                    android:id="@+id/aydin"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="20dp"
-                    android:text=""
-                    android:textStyle="bold" />
+
 
                 <ImageButton
                     android:id="@+id/inst"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/aydin"
+                    android:layout_centerVertical="true"
                     android:background="@null"
                     android:src="@drawable/ic_instagram_black_24dp" />
 
@@ -105,12 +82,9 @@
                     android:id="@+id/face"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/aydin"
-                    android:layout_marginLeft="31dp"
-                    android:layout_marginStart="31dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
                     android:layout_toEndOf="@+id/inst"
-                    android:layout_toRightOf="@+id/inst"
                     android:background="@null"
                     android:src="@drawable/ic_facebook_black_24dp" />
 
@@ -118,8 +92,10 @@
                     android:id="@+id/link"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/aydin"
-                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@id/face"
+                    android:layout_alignBottom="@+id/face"
                     android:background="@null"
                     android:src="@drawable/ic_linkedin_black_24dp" />
 
@@ -127,11 +103,9 @@
                     android:id="@+id/mail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/face"
-                    android:layout_marginLeft="29dp"
-                    android:layout_marginStart="29dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
                     android:layout_toEndOf="@+id/link"
-                    android:layout_toRightOf="@+id/link"
                     android:background="@null"
                     android:src="@drawable/ic_email_black_24dp" />
 
@@ -139,12 +113,9 @@
                     android:id="@+id/web"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/aydin"
-                    android:layout_marginLeft="27dp"
-                    android:layout_marginStart="27dp"
-                    android:layout_marginTop="7dp"
+                    android:layout_marginStart="30dp"
                     android:layout_toEndOf="@+id/mail"
-                    android:layout_toRightOf="@+id/mail"
+                    android:layout_centerVertical="true"
                     android:background="@null"
                     android:src="@mipmap/ic_web_black_36dp" />
             </RelativeLayout>
@@ -152,10 +123,9 @@
         </ViewFlipper>
 
         <ViewFlipper
-            android:id="@+id/view_flipper_mer"
+            android:id="@+id/view_flipper2"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_below="@+id/aydinser">
+            android:layout_height="fill_parent">
 
             <RelativeLayout
                 android:layout_width="fill_parent"
@@ -191,73 +161,57 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/burakk"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/multichoice_bg_unchecked">
 
-                <TextView
-                    android:id="@+id/burak"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="20dp"
-                    android:text=""
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textStyle="bold" />
-
                 <ImageButton
-                    android:id="@+id/instmer"
+                    android:id="@+id/inst2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/burak"
+                    android:layout_centerVertical="true"
                     android:background="@null"
                     android:src="@drawable/ic_instagram_black_24dp" />
 
                 <ImageButton
-                    android:id="@+id/facemer"
+                    android:id="@+id/face2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/burak"
-                    android:layout_marginLeft="31dp"
-                    android:layout_marginStart="31dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_toEndOf="@+id/instmer"
-                    android:layout_toRightOf="@+id/instmer"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@+id/inst2"
                     android:background="@null"
                     android:src="@drawable/ic_facebook_black_24dp" />
 
                 <ImageButton
-                    android:id="@+id/twittermer"
+                    android:id="@+id/link2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/burak"
-                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@id/face2"
+                    android:layout_alignBottom="@+id/face2"
                     android:background="@null"
-                    android:src="@drawable/ic_twitter_black_24dp" />
+                    android:src="@drawable/ic_linkedin_black_24dp" />
 
                 <ImageButton
-                    android:id="@+id/mailmer"
+                    android:id="@+id/mail2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/facemer"
-                    android:layout_marginLeft="29dp"
-                    android:layout_marginStart="29dp"
-                    android:layout_toEndOf="@+id/twittermer"
-                    android:layout_toRightOf="@+id/twittermer"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@+id/link2"
                     android:background="@null"
                     android:src="@drawable/ic_email_black_24dp" />
 
                 <ImageButton
-                    android:id="@+id/webmer"
+                    android:id="@+id/web2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/burak"
-                    android:layout_marginLeft="27dp"
-                    android:layout_marginStart="27dp"
-                    android:layout_marginTop="7dp"
-                    android:layout_toEndOf="@+id/mailmer"
-                    android:layout_toRightOf="@+id/mailmer"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@+id/mail2"
+                    android:layout_centerVertical="true"
                     android:background="@null"
                     android:src="@mipmap/ic_web_black_36dp" />
             </RelativeLayout>

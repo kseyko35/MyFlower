@@ -50,6 +50,8 @@
     <string name="editor_update_reminder_successful">Reminder updated</string>
 
     <string name="editor_update_reminder_failed">Error with updating reminder</string>
+    <string name="main_about">Çiçek bakımı için hazırladığımız bu programda bütün bilgiler Anadolu Üniversitesi kütüphanesinden alınmıştır</string>
+    <string name="about_seyfi">Uygulama Seyfettin ERCAN tarafından yazılmıştır. Bir tez çalışması olmakla beraber bitki haricinde hayvan ya da hatırlamayı unuttuğumuz birçok şey için kullanılabilir. İletişim bilgileri için kaydırınız</string>
 
 
 </resources>

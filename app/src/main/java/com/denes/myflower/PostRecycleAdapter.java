@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -81,9 +82,8 @@ public class PostRecycleAdapter extends RecyclerView.Adapter<PostRecycleAdapter.
 
         String user_id=flowers_list.get(position).getUser_id();
         if(user_id.equals(currentUserID)){
-            holder.mPostDelete.setEnabled(true);
-            holder.mPostDelete.setVisibility(View.VISIBLE);
-            holder.mTextDelete.setVisibility(View.VISIBLE);
+            holder.mDeleteLinearLayout.setEnabled(true);
+            holder.mDeleteLinearLayout.setVisibility(View.VISIBLE);
         }
         //User Data will be retrieved here...
 
@@ -115,10 +115,10 @@ public class PostRecycleAdapter extends RecyclerView.Adapter<PostRecycleAdapter.
             @Override
             public void onEvent(DocumentSnapshot documentSnapshot, FirebaseFirestoreException e) {
                 if(documentSnapshot.exists()) {
-                    holder.mLikeBtn.setImageDrawable(context.getDrawable(R.mipmap.action_like_accent));
+                    holder.mLikeImage.setImageDrawable(context.getDrawable(R.mipmap.action_like_accent));
                 }
                 else{
-                    holder.mLikeBtn.setImageDrawable(context.getDrawable(R.mipmap.action_like_gray));
+                    holder.mLikeImage.setImageDrawable(context.getDrawable(R.mipmap.action_like_gray));
                 }
             }
         });
@@ -140,9 +140,11 @@ public class PostRecycleAdapter extends RecyclerView.Adapter<PostRecycleAdapter.
             public void onEvent(QuerySnapshot queryDocumentSnapshots, FirebaseFirestoreException e) {
                 if(!queryDocumentSnapshots.isEmpty()){
                     int count=queryDocumentSnapshots.size();
+                    holder.mCommentImage.setImageDrawable(context.getDrawable(R.mipmap.ic_send_icon_yellow));
                     holder.setCommentsCounter(count);
                 }
                 else{
+                    holder.mCommentImage.setImageDrawable(context.getDrawable(R.mipmap.comment_icon));
                     holder.setCommentsCounter(0);
                 }
             }
@@ -150,7 +152,7 @@ public class PostRecycleAdapter extends RecyclerView.Adapter<PostRecycleAdapter.
 
 
         //likeFeatures
-        holder.mLikeBtn.setOnClickListener(new View.OnClickListener() {
+        holder.mLikeLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -173,17 +175,16 @@ public class PostRecycleAdapter extends RecyclerView.Adapter<PostRecycleAdapter.
             }
         });
 
-        holder.blogCommentBtn.setOnClickListener(new View.OnClickListener() {
+        holder.mCommentLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-
+            public void onClick(View view) {
                 Intent commentIntent = new Intent(context, Comments.class);
                 commentIntent.putExtra("flower_post_id", flowerPostId);
                 context.startActivity(commentIntent);
-
             }
         });
-        holder.mPostDelete.setOnClickListener(new View.OnClickListener() {
+
+        holder.mDeleteLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mFirebaseFirestore.collection("Flowers").document(flowerPostId).delete().addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -208,23 +209,25 @@ public class PostRecycleAdapter extends RecyclerView.Adapter<PostRecycleAdapter.
 
         private View mView;
         private TextView nameView;
-        private ImageView postImageView;
+        private ImageView postImageView,mCommentImage,mLikeImage;
+
         private TextView postDate;
         private TextView postUserName;
         private CircleImageView postUserImage;
-        private ImageView mLikeBtn;
         private TextView mLikeCounter,mTextDelete;
-        private ImageView blogCommentBtn;
-        private ImageView mPostDelete;
         private TextView mCommentsCounter;
+        private LinearLayout mCommentLinearLayout,mLikeLinearLayout,mDeleteLinearLayout;
 
         public ViewHolder(View itemView) {
             super(itemView);
             mView=itemView;
-            mLikeBtn=mView.findViewById(R.id.post_like);
-            blogCommentBtn = mView.findViewById(R.id.comment_btn);
-            mPostDelete=mView.findViewById(R.id.delete_btn);
+
+            mCommentLinearLayout=mView.findViewById(R.id.commentLinearLayout);
+            mDeleteLinearLayout=mView.findViewById(R.id.deleteLinearLayout);
+            mLikeLinearLayout=mView.findViewById(R.id.likeLinearLayout);
             mTextDelete=mView.findViewById(R.id.text_delete);
+            mLikeImage=mView.findViewById(R.id.post_like);
+            mCommentImage=mView.findViewById(R.id.comment_img);
 
         }
         public void setNameText (String nameText){
